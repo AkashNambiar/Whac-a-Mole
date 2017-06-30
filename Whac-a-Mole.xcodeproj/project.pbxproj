@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3888E62D1F0709C0000C0960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3888E62C1F0709C0000C0960 /* AppDelegate.swift */; };
+		3888E62F1F0709C0000C0960 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3888E62E1F0709C0000C0960 /* GameScene.sks */; };
+		3888E6311F0709C0000C0960 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3888E6301F0709C0000C0960 /* Actions.sks */; };
+		3888E6331F0709C0000C0960 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3888E6321F0709C0000C0960 /* GameScene.swift */; };
+		3888E6351F0709C1000C0960 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3888E6341F0709C1000C0960 /* GameViewController.swift */; };
+		3888E6381F0709C1000C0960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3888E6361F0709C1000C0960 /* Main.storyboard */; };
+		3888E63A1F0709C1000C0960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3888E6391F0709C1000C0960 /* Assets.xcassets */; };
+		3888E63D1F0709C1000C0960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3888E63B1F0709C1000C0960 /* LaunchScreen.storyboard */; };
+		3888E6481F0709C1000C0960 /* Whac_a_MoleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3888E6471F0709C1000C0960 /* Whac_a_MoleTests.swift */; };
+		3888E6531F0709C1000C0960 /* Whac_a_MoleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3888E6521F0709C1000C0960 /* Whac_a_MoleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3888E6441F0709C1000C0960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3888E6211F0709C0000C0960 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3888E6281F0709C0000C0960;
+			remoteInfo = "Whac-a-Mole";
+		};
+		3888E64F1F0709C1000C0960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3888E6211F0709C0000C0960 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3888E6281F0709C0000C0960;
+			remoteInfo = "Whac-a-Mole";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3888E6291F0709C0000C0960 /* Whac-a-Mole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whac-a-Mole.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3888E62C1F0709C0000C0960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3888E62E1F0709C0000C0960 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		3888E6301F0709C0000C0960 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		3888E6321F0709C0000C0960 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		3888E6341F0709C1000C0960 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		3888E6371F0709C1000C0960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3888E6391F0709C1000C0960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3888E63C1F0709C1000C0960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3888E63E1F0709C1000C0960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3888E6431F0709C1000C0960 /* Whac-a-MoleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whac-a-MoleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3888E6471F0709C1000C0960 /* Whac_a_MoleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whac_a_MoleTests.swift; sourceTree = "<group>"; };
+		3888E6491F0709C1000C0960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3888E64E1F0709C1000C0960 /* Whac-a-MoleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whac-a-MoleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3888E6521F0709C1000C0960 /* Whac_a_MoleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whac_a_MoleUITests.swift; sourceTree = "<group>"; };
+		3888E6541F0709C1000C0960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3888E6261F0709C0000C0960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3888E6401F0709C1000C0960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3888E64B1F0709C1000C0960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3888E6201F0709C0000C0960 = {
+			isa = PBXGroup;
+			children = (
+				3888E62B1F0709C0000C0960 /* Whac-a-Mole */,
+				3888E6461F0709C1000C0960 /* Whac-a-MoleTests */,
+				3888E6511F0709C1000C0960 /* Whac-a-MoleUITests */,
+				3888E62A1F0709C0000C0960 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3888E62A1F0709C0000C0960 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3888E6291F0709C0000C0960 /* Whac-a-Mole.app */,
+				3888E6431F0709C1000C0960 /* Whac-a-MoleTests.xctest */,
+				3888E64E1F0709C1000C0960 /* Whac-a-MoleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3888E62B1F0709C0000C0960 /* Whac-a-Mole */ = {
+			isa = PBXGroup;
+			children = (
+				3888E62C1F0709C0000C0960 /* AppDelegate.swift */,
+				3888E62E1F0709C0000C0960 /* GameScene.sks */,
+				3888E6301F0709C0000C0960 /* Actions.sks */,
+				3888E6321F0709C0000C0960 /* GameScene.swift */,
+				3888E6341F0709C1000C0960 /* GameViewController.swift */,
+				3888E6361F0709C1000C0960 /* Main.storyboard */,
+				3888E6391F0709C1000C0960 /* Assets.xcassets */,
+				3888E63B1F0709C1000C0960 /* LaunchScreen.storyboard */,
+				3888E63E1F0709C1000C0960 /* Info.plist */,
+			);
+			path = "Whac-a-Mole";
+			sourceTree = "<group>";
+		};
+		3888E6461F0709C1000C0960 /* Whac-a-MoleTests */ = {
+			isa = PBXGroup;
+			children = (
+				3888E6471F0709C1000C0960 /* Whac_a_MoleTests.swift */,
+				3888E6491F0709C1000C0960 /* Info.plist */,
+			);
+			path = "Whac-a-MoleTests";
+			sourceTree = "<group>";
+		};
+		3888E6511F0709C1000C0960 /* Whac-a-MoleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3888E6521F0709C1000C0960 /* Whac_a_MoleUITests.swift */,
+				3888E6541F0709C1000C0960 /* Info.plist */,
+			);
+			path = "Whac-a-MoleUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3888E6281F0709C0000C0960 /* Whac-a-Mole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3888E6571F0709C1000C0960 /* Build configuration list for PBXNativeTarget "Whac-a-Mole" */;
+			buildPhases = (
+				3888E6251F0709C0000C0960 /* Sources */,
+				3888E6261F0709C0000C0960 /* Frameworks */,
+				3888E6271F0709C0000C0960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Whac-a-Mole";
+			productName = "Whac-a-Mole";
+			productReference = 3888E6291F0709C0000C0960 /* Whac-a-Mole.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3888E6421F0709C1000C0960 /* Whac-a-MoleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3888E65A1F0709C1000C0960 /* Build configuration list for PBXNativeTarget "Whac-a-MoleTests" */;
+			buildPhases = (
+				3888E63F1F0709C1000C0960 /* Sources */,
+				3888E6401F0709C1000C0960 /* Frameworks */,
+				3888E6411F0709C1000C0960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3888E6451F0709C1000C0960 /* PBXTargetDependency */,
+			);
+			name = "Whac-a-MoleTests";
+			productName = "Whac-a-MoleTests";
+			productReference = 3888E6431F0709C1000C0960 /* Whac-a-MoleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3888E64D1F0709C1000C0960 /* Whac-a-MoleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3888E65D1F0709C1000C0960 /* Build configuration list for PBXNativeTarget "Whac-a-MoleUITests" */;
+			buildPhases = (
+				3888E64A1F0709C1000C0960 /* Sources */,
+				3888E64B1F0709C1000C0960 /* Frameworks */,
+				3888E64C1F0709C1000C0960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3888E6501F0709C1000C0960 /* PBXTargetDependency */,
+			);
+			name = "Whac-a-MoleUITests";
+			productName = "Whac-a-MoleUITests";
+			productReference = 3888E64E1F0709C1000C0960 /* Whac-a-MoleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3888E6211F0709C0000C0960 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Akash Nambiar";
+				TargetAttributes = {
+					3888E6281F0709C0000C0960 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					3888E6421F0709C1000C0960 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3888E6281F0709C0000C0960;
+					};
+					3888E64D1F0709C1000C0960 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3888E6281F0709C0000C0960;
+					};
+				};
+			};
+			buildConfigurationList = 3888E6241F0709C0000C0960 /* Build configuration list for PBXProject "Whac-a-Mole" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3888E6201F0709C0000C0960;
+			productRefGroup = 3888E62A1F0709C0000C0960 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3888E6281F0709C0000C0960 /* Whac-a-Mole */,
+				3888E6421F0709C1000C0960 /* Whac-a-MoleTests */,
+				3888E64D1F0709C1000C0960 /* Whac-a-MoleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3888E6271F0709C0000C0960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3888E6381F0709C1000C0960 /* Main.storyboard in Resources */,
+				3888E62F1F0709C0000C0960 /* GameScene.sks in Resources */,
+				3888E63A1F0709C1000C0960 /* Assets.xcassets in Resources */,
+				3888E63D1F0709C1000C0960 /* LaunchScreen.storyboard in Resources */,
+				3888E6311F0709C0000C0960 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3888E6411F0709C1000C0960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3888E64C1F0709C1000C0960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3888E6251F0709C0000C0960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3888E6331F0709C0000C0960 /* GameScene.swift in Sources */,
+				3888E6351F0709C1000C0960 /* GameViewController.swift in Sources */,
+				3888E62D1F0709C0000C0960 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3888E63F1F0709C1000C0960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3888E6481F0709C1000C0960 /* Whac_a_MoleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3888E64A1F0709C1000C0960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3888E6531F0709C1000C0960 /* Whac_a_MoleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3888E6451F0709C1000C0960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3888E6281F0709C0000C0960 /* Whac-a-Mole */;
+			targetProxy = 3888E6441F0709C1000C0960 /* PBXContainerItemProxy */;
+		};
+		3888E6501F0709C1000C0960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3888E6281F0709C0000C0960 /* Whac-a-Mole */;
+			targetProxy = 3888E64F1F0709C1000C0960 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3888E6361F0709C1000C0960 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3888E6371F0709C1000C0960 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3888E63B1F0709C1000C0960 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3888E63C1F0709C1000C0960 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3888E6551F0709C1000C0960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3888E6561F0709C1000C0960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3888E6581F0709C1000C0960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Whac-a-Mole/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AkashNambiar.Whac-a-Mole";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3888E6591F0709C1000C0960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Whac-a-Mole/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AkashNambiar.Whac-a-Mole";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3888E65B1F0709C1000C0960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Whac-a-MoleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AkashNambiar.Whac-a-MoleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whac-a-Mole.app/Whac-a-Mole";
+			};
+			name = Debug;
+		};
+		3888E65C1F0709C1000C0960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Whac-a-MoleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AkashNambiar.Whac-a-MoleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whac-a-Mole.app/Whac-a-Mole";
+			};
+			name = Release;
+		};
+		3888E65E1F0709C1000C0960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Whac-a-MoleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AkashNambiar.Whac-a-MoleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Whac-a-Mole";
+			};
+			name = Debug;
+		};
+		3888E65F1F0709C1000C0960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Whac-a-MoleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AkashNambiar.Whac-a-MoleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Whac-a-Mole";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3888E6241F0709C0000C0960 /* Build configuration list for PBXProject "Whac-a-Mole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3888E6551F0709C1000C0960 /* Debug */,
+				3888E6561F0709C1000C0960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3888E6571F0709C1000C0960 /* Build configuration list for PBXNativeTarget "Whac-a-Mole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3888E6581F0709C1000C0960 /* Debug */,
+				3888E6591F0709C1000C0960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3888E65A1F0709C1000C0960 /* Build configuration list for PBXNativeTarget "Whac-a-MoleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3888E65B1F0709C1000C0960 /* Debug */,
+				3888E65C1F0709C1000C0960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3888E65D1F0709C1000C0960 /* Build configuration list for PBXNativeTarget "Whac-a-MoleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3888E65E1F0709C1000C0960 /* Debug */,
+				3888E65F1F0709C1000C0960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3888E6211F0709C0000C0960 /* Project object */;
+}
