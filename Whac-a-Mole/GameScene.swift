@@ -7,83 +7,187 @@
 //
 
 import SpriteKit
-import GameplayKit
+
+enum playingState {
+    case playing, notPlaying
+}
+
+enum moleState {
+    case alive, dead
+}
+
+var currentState: playingState = .notPlaying
+var allMoles: [moleState] = [.dead, .dead, .dead, .dead,
+                             .dead, .dead, .dead, .dead,
+                             .dead, .dead, .dead, .dead,
+                             .dead, .dead, .dead, .dead]
+
+var playButton: MSButtonNode!
+var score: SKLabelNode!
+
+var frequency = 120
+var i = 0
 
 class GameScene: SKScene {
     
-    private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
-    
     override func didMove(to view: SKView) {
         
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
+        super.didMove(to: view)
+        
+        print("1")
+        
+        
+        score = childNode(withName: "score") as! SKLabelNode
+        playButton = childNode(withName: "playButton") as! MSButtonNode
+        
+        playButton.selectedHandler = {
+            print("2")
+            currentState = .playing
         }
         
-        // Create shape node to use during mouse interaction
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
+        addMole()
         
-        if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 2.5
-            
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
-                                              SKAction.removeFromParent()]))
-        }
     }
     
-    
-    func touchDown(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.green
-            self.addChild(n)
-        }
-    }
-    
-    func touchMoved(toPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.blue
-            self.addChild(n)
-        }
-    }
-    
-    func touchUp(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.red
-            self.addChild(n)
+    override func update(_ currentTime: CFTimeInterval) {
+        /* Called before each frame is rendered */
+        if i > frequency {
+            print("addMole")
+            addMole()
+        }else{
+            i += 1
         }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
+        let touch = touches.first!
+        
+        let locationTouch = touch.location(in: self)
+        
+        var row = 100
+        var column = 100
+        var location = 100
+        
+        if locationTouch.y >= 120 || locationTouch.y < 200 {
+            row = 3
+        }else if locationTouch.y >= 200 || locationTouch.y < 280 {
+            row = 2
+        }else if locationTouch.y >= 280 || locationTouch.y < 360 {
+            row = 1
+        }else if locationTouch.y >= 360 || locationTouch.y < 440 {
+            row = 0
         }
         
-        for t in touches { self.touchDown(atPoint: t.location(in: self)) }
+        if locationTouch.x >= 0 || locationTouch.x < 80 {
+            column = 0
+        }else if locationTouch.x >= 80 || locationTouch.x < 160 {
+            column = 1
+        }else if locationTouch.x >= 160 || locationTouch.x < 240 {
+            column = 2
+        }else if locationTouch.x >= 240 || locationTouch.x < 320 {
+            column = 3
+        }
+        
+        //1
+        if row == 0 && column == 0{
+            location = 0
+        }else if row == 0 && column == 1{
+            location = 1
+        }else if row == 0 && column == 2{
+            location = 2
+        }else if row == 0 && column == 3{
+            location = 3
+            //2
+        }else if row == 1 && column == 0{
+            location = 4
+        }else if row == 1 && column == 1{
+            location = 5
+        }else if row == 1 && column == 2{
+            location = 6
+        }else if row == 1 && column == 3{
+            location = 7
+            //3
+        }else if row == 2 && column == 0{
+            location = 8
+        }else if row == 2 && column == 1{
+            location = 9
+        }else if row == 2 && column == 2{
+            location = 10
+        }else if row == 2 && column == 3{
+            location = 11
+            //4
+        }else if row == 3 && column == 0{
+            location = 12
+        }else if row == 3 && column == 1{
+            location = 13
+        }else if row == 3 && column == 2{
+            location = 14
+        }else if row == 3 && column == 3{
+            location = 15
+        }
+        
+        if location >= 0 && location <= 15 {
+          
+            var moleTouched = allMoles[location]
+            
+            if moleTouched == .alive{
+                moleTouched = .dead
+                
+                let moleDeath = SKAction.run ({
+                   
+                })
+                self.run(moleDeath)
+            }
+        }
     }
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
+    func addMole() {
+        var location = Int(arc4random_uniform(16))
+        
+        while allMoles[location] == .alive {
+            location = Int(arc4random_uniform(16))
+        }
+        
+        allMoles[location] = .alive
+        
+        let mole = Mole()
+        
+        mole.xScale = 1.25
+        mole.yScale = 1.25
+        mole.zPosition = 1
+        mole.anchorPoint.x = 0
+        mole.anchorPoint.y = 0
+        
+        var xPosition: CGFloat = 0
+        var yPosition: CGFloat = 0
+        
+        // X
+        if location == 0 || location == 4 || location == 8  || location == 12 {
+            xPosition = 0
+        }else if location == 1 || location == 5 || location == 9  || location == 13 {
+            xPosition = 80
+        }else if location == 2 || location == 6 || location == 10  || location == 14 {
+            xPosition = 160
+        }else if location == 3 || location == 7 || location == 911 || location == 15 {
+            xPosition = 240
+        }
+        
+        // Y
+        if location == 0 || location == 1 || location == 2 || location == 3 {
+            yPosition = 360
+        }else if location == 4 || location == 5 || location == 6 || location == 7 {
+            yPosition = 280
+        }else if location == 8 || location == 9 || location == 10 || location == 11 {
+            yPosition = 200
+        }else if location == 12 || location == 13 || location == 14 || location == 15{
+            yPosition = 120
+        }
+        
+        mole.position.x = xPosition
+        mole.position.y = yPosition
+        
+        addChild(mole)
+        
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-    }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-    }
-    
-    
-    override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
-    }
 }

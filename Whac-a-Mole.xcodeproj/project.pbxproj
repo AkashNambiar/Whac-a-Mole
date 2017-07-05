@@ -10,13 +10,15 @@
 		3888E62D1F0709C0000C0960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3888E62C1F0709C0000C0960 /* AppDelegate.swift */; };
 		3888E62F1F0709C0000C0960 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3888E62E1F0709C0000C0960 /* GameScene.sks */; };
 		3888E6311F0709C0000C0960 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3888E6301F0709C0000C0960 /* Actions.sks */; };
-		3888E6331F0709C0000C0960 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3888E6321F0709C0000C0960 /* GameScene.swift */; };
 		3888E6351F0709C1000C0960 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3888E6341F0709C1000C0960 /* GameViewController.swift */; };
 		3888E6381F0709C1000C0960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3888E6361F0709C1000C0960 /* Main.storyboard */; };
 		3888E63A1F0709C1000C0960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3888E6391F0709C1000C0960 /* Assets.xcassets */; };
 		3888E63D1F0709C1000C0960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3888E63B1F0709C1000C0960 /* LaunchScreen.storyboard */; };
 		3888E6481F0709C1000C0960 /* Whac_a_MoleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3888E6471F0709C1000C0960 /* Whac_a_MoleTests.swift */; };
 		3888E6531F0709C1000C0960 /* Whac_a_MoleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3888E6521F0709C1000C0960 /* Whac_a_MoleUITests.swift */; };
+		3888E6631F0711C8000C0960 /* Mole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3888E6621F0711C8000C0960 /* Mole.swift */; };
+		3888E6651F07121D000C0960 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3888E6641F07121D000C0960 /* MSButtonNode.swift */; };
+		389205DA1F0A3E3100925E32 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389205D91F0A3E3100925E32 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,6 @@
 		3888E62C1F0709C0000C0960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3888E62E1F0709C0000C0960 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		3888E6301F0709C0000C0960 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		3888E6321F0709C0000C0960 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		3888E6341F0709C1000C0960 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3888E6371F0709C1000C0960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3888E6391F0709C1000C0960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +54,9 @@
 		3888E64E1F0709C1000C0960 /* Whac-a-MoleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whac-a-MoleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3888E6521F0709C1000C0960 /* Whac_a_MoleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whac_a_MoleUITests.swift; sourceTree = "<group>"; };
 		3888E6541F0709C1000C0960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3888E6621F0711C8000C0960 /* Mole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mole.swift; sourceTree = "<group>"; };
+		3888E6641F07121D000C0960 /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
+		389205D91F0A3E3100925E32 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +107,13 @@
 		3888E62B1F0709C0000C0960 /* Whac-a-Mole */ = {
 			isa = PBXGroup;
 			children = (
-				3888E62C1F0709C0000C0960 /* AppDelegate.swift */,
 				3888E62E1F0709C0000C0960 /* GameScene.sks */,
 				3888E6301F0709C0000C0960 /* Actions.sks */,
-				3888E6321F0709C0000C0960 /* GameScene.swift */,
+				3888E62C1F0709C0000C0960 /* AppDelegate.swift */,
+				389205D91F0A3E3100925E32 /* GameScene.swift */,
+				3888E6621F0711C8000C0960 /* Mole.swift */,
 				3888E6341F0709C1000C0960 /* GameViewController.swift */,
+				3888E6641F07121D000C0960 /* MSButtonNode.swift */,
 				3888E6361F0709C1000C0960 /* Main.storyboard */,
 				3888E6391F0709C1000C0960 /* Assets.xcassets */,
 				3888E63B1F0709C1000C0960 /* LaunchScreen.storyboard */,
@@ -202,6 +208,7 @@
 				TargetAttributes = {
 					3888E6281F0709C0000C0960 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = GCVD58YW3D;
 						ProvisioningStyle = Automatic;
 					};
 					3888E6421F0709C1000C0960 = {
@@ -270,9 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3888E6331F0709C0000C0960 /* GameScene.swift in Sources */,
+				389205DA1F0A3E3100925E32 /* GameScene.swift in Sources */,
 				3888E6351F0709C1000C0960 /* GameViewController.swift in Sources */,
+				3888E6631F0711C8000C0960 /* Mole.swift in Sources */,
 				3888E62D1F0709C0000C0960 /* AppDelegate.swift in Sources */,
+				3888E6651F07121D000C0960 /* MSButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GCVD58YW3D;
 				INFOPLIST_FILE = "Whac-a-Mole/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AkashNambiar.Whac-a-Mole";
@@ -438,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GCVD58YW3D;
 				INFOPLIST_FILE = "Whac-a-Mole/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AkashNambiar.Whac-a-Mole";
@@ -519,6 +530,7 @@
 				3888E6591F0709C1000C0960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3888E65A1F0709C1000C0960 /* Build configuration list for PBXNativeTarget "Whac-a-MoleTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +539,7 @@
 				3888E65C1F0709C1000C0960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3888E65D1F0709C1000C0960 /* Build configuration list for PBXNativeTarget "Whac-a-MoleUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +548,7 @@
 				3888E65F1F0709C1000C0960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
